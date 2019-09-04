@@ -20,6 +20,7 @@ app.use((req, res, next) => {
     const method = req.method;
     const requestedAt = new Date().toLocaleString();
     console.table({ url, method, requestedAt });
+    next();
 });
 
 
@@ -27,7 +28,6 @@ app.use(session({
     secret: '.., this is a secret',
     resave: false,
     saveUninitialized: false
-
 }));
 
 
@@ -39,16 +39,16 @@ const corsOption = {
 app.use(cors(corsOption));
 
 app.get('/', (req, res) => {
-    res.send('<h1>Final-Project</h1>')
+    res.send('<h1>Final-Project</h1>');
 })
 
 
 
-app.use('/api/v1/auth', routes.auth);
+// app.use('/api/v1/auth', routes.auth);
 
-app.use('/api/v1/users', routes.users);
+// app.use('/api/v1/users', routes.users);
 
-app.use('/api/v1/posts', routes.posts);
+// app.use('/api/v1/posts', routes.posts);
 
 
 

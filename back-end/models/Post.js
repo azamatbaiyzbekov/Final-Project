@@ -15,7 +15,7 @@ const postSchema = new Schema({
         maxlength: [300, 'Max length exceeded'],
     },
     content: {
-        typeL: String,
+        type: String,
         required: true,
         maxlength: [3000, 'Max length exceeded'],
     },

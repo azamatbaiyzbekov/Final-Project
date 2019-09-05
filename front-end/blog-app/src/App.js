@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
 import NavBar from './components/layout/NavBar'
+import Routes from './config/routes'
 import Landing from './pages/Landing';
 
 
@@ -19,8 +20,7 @@ class App extends Component {
     return (
       <>
       <NavBar />
-      <h1>Whats Up</h1>
-      <Landing />
+      <Routes />
       </>
     )
    

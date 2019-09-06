@@ -9,13 +9,10 @@ import './App.css';
 
 
 
-import './App.css';
-
-
 
 class App extends Component {
   state = {
-    currentuser: localStorage.getItem('uid'),
+    currentUser: localStorage.getItem('uid'),
   }
 
   setCurrentUser = (userId) => {
@@ -27,7 +24,7 @@ class App extends Component {
     localStorage.removeItem('uid');
     axios.post(`${API_URL}/auth/logout`, { withCredentials: true })
       .then(() => {
-        this.setState({ currentuser: null });
+        this.setState({ currentUser: null });
         this.props.history.push('/login');
       });
   };
@@ -35,11 +32,10 @@ class App extends Component {
   render() {
     return (
       <>
-      <NavBar logout={this.handleLogout} currentuser={this.state.currentuser} />
+      <NavBar logout={this.handleLogout} currentUser={this.state.currentUser} />
       <div className="container">
-        <Routes setCurrentUser={this.setCurrentUser} />
+        <Routes setCurrentUser={this.setCurrentUser} currentUser={this.state.currentUser}  />
       </div>
-     
       </>
     );
    
@@ -48,4 +44,4 @@ class App extends Component {
     
 
 
-export default withRouter (App);
+export default withRouter(App);

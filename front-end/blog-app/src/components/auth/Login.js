@@ -15,25 +15,23 @@ class Login extends Component {
         });
     };
 
-    handleSubmit = event => {
-      const userInfo = {
-          email: this.state.email,
-          password: this.state.password
-      }
 
-      axios.post(`${API_URL}/auth/login`, userInfo, { withCredentials: true })
+    handleSubmit = (event) => {
+        event.preventDefault();
+        const userInfo = this.state;
+        axios.post(`${API_URL}/auth/login`, userInfo, { withCredentials: true })
           .then(res => {
-              this.props.setCurrentUser(res.data.id, res.data.username);
-              this.props.history.push('/about')
+            this.props.setCurrentUser(res.data.id);
+            this.props.history.push('/profile');
           })
-          .catch(err => {
-              console.log(err)
-      });
-  };
+          .catch(err => this.setState({ error: err.response.data.message }));
+      };
+
+
 
     render() {
         return (
-    <div className me="row">
+        <div className="row">
         
         <section id="login" className="col-md-6 offset-md-3">
         { this.state.error }

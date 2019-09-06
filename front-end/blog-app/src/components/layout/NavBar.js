@@ -1,7 +1,5 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import Login from '../auth/Login';
-import Register from '../auth/Register'
 import './NavBar.css';
 
 

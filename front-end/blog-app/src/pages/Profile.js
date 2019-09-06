@@ -2,7 +2,7 @@ import React from 'react';
 import './Profile.css'
 
 
-const Profile = () => {
+const Profile = ({ profile: { username, email, join_date, place_of_birth, occupation }}) => {
     return (
        
        <>
@@ -64,7 +64,7 @@ const Profile = () => {
                                                                     <label>Username</label>
                                                                 </div>
                                                                 <div className="col-md-6">
-                                                                    <p>Juan Perez</p>
+                                                                    <p>{username}</p>
                                                                 </div>
                                                             </div>
                                                             <div className="row">
@@ -72,15 +72,15 @@ const Profile = () => {
                                                                     <label>Email</label>
                                                                 </div>
                                                                 <div className="col-md-6">
-                                                                    <p>juanp@gmail.com</p>
+                                                                    <p>{email}</p>
                                                                 </div>
                                                             </div>
                                                             <div className="row">
                                                                 <div className="col-md-2">
-                                                                    <label>Profession</label>
+                                                                    <label>Occupation</label>
                                                                 </div>
                                                                 <div className="col-md-6">
-                                                                    <p>12345678</p>
+                                                                    <p>#</p>
                                                                 </div>
                                                             </div>
                                                             <div className="row">
@@ -88,7 +88,7 @@ const Profile = () => {
                                                                     <label>Date Joined</label>
                                                                 </div>
                                                                 <div className="col-md-6">
-                                                                    <p>Developer</p>
+                                                                    <p>{new Date(join_date).toLocaleString()}</p>
                                                                 </div>
                                                             </div>
                                                             </div>

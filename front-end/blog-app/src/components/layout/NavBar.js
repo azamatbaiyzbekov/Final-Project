@@ -1,50 +1,63 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import Login from '../auth/Login';
+import Register from '../auth/Register'
+import './NavBar.css';
 
 
 
+const NavBar = ({ logout, currentUser }) => {
 
-class NavBar extends Component {
-  render() {
-    return (
-
-
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#">Tech-Blog</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNav">
-    <ul className="navbar-nav">
-      <li className="nav-item active">
-        <a className="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+  const links = (
+    <>
+      <li className="nav-item">
+        <NavLink className="nav-link" exact to="/">Home</NavLink>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">News</a>
+        <NavLink className="nav-link" exact to="/about">About Us</NavLink>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Login</a>
+        <NavLink className="nav-link" exact to="/news">News</NavLink>
       </li>
       <li className="nav-item">
-       <a className="nav-link" href="#">Register</a>
+        <NavLink className="nav-link" to="/login">Login</NavLink>
       </li>
-    </ul>
-  </div>
-</nav>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/register">Register</NavLink>
+      </li>
+    </>
+  );
 
+  const authLinks = (
+    <>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/profile">Profile</NavLink>
+      </li>
+     
+      <li className="nav-item">
+        <span className="nav-link" onClick={logout} style={{ cursor: 'pointer' }}>Logout</span>
+      </li>
+    </>
+  );
 
+  return (
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <div className="container">
+        <Link className="navbar-brand" to="/">Tech-Blog</Link>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-
-
-
-    )
-  }
-
-    
+        <div className="collapse navbar-collapse" id="navbarsExample04">
+          <ul className="navbar-nav ml-auto">
+            { currentUser ? authLinks : links }
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
-    
-
-
-
 export default NavBar;
+
 

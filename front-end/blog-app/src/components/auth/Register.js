@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { API_URL } from '../'
+import { API_URL } from '../../constants';
 
 
 class Register extends Component {
@@ -45,7 +45,7 @@ class Register extends Component {
           <form onSubmit={this.handleSubmit}>
             <div className="form-group">
               <label htmlFor="username">Username</label>
-              <input type="username" id="username" name="username" value={this.state.username} onChange={this.handleChange} className="form-control form-control-lg" placeholder="SuperCool Guy"/>
+              <input type="username" id="username" name="username" value={this.state.username} onChange={this.handleChange} className="form-control form-control-lg" />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>

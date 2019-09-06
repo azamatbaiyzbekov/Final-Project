@@ -5,154 +5,140 @@ import './AboutUs.css'
 const AboutUs = () => {
     return (
 <>
-			<section id="header">
-            <header>
-                <span className="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-                <h1 id="logo"><a href="#">Terry Pratchett</a></h1>
-                <p>“The first draft is just you<br />
-                telling yourself the story.”</p>
-            </header>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#one" className="active">About</a></li>
-                    <li><a href="#two">Things I Can Do</a></li>
-                    <li><a href="#three">A Few Accomplishments</a></li>
-                    <li><a href="#four">Contact</a></li> 
-                </ul>
-            </nav>
-            <footer>
-                <ul className="icons">
-                    <li><a href="#" className="icon brands fa-twitter"><span className="label">Twitter</span></a></li>
-                    <li><a href="#" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
-                    <li><a href="#" className="icon brands fa-instagram"><span className="label">Instagram</span></a></li>
-                    <li><a href="#" className="icon brands fa-github"><span className="label">Github</span></a></li>
-                    <li><a href="#" className="icon solid fa-envelope"><span className="label">Email</span></a></li>
-                </ul>
-            </footer>
-        </section>
 
-   
-        <div id="wrapper">
-
-           
-                <div id="main">
-
-                    
-                        <section id="one">
-                            <div className="image main" data-position="center">
-                                <img src='./images/banner.jpg' alt="" />
-                            </div>
-                            <div className="container">
-                                <header className="major">
-                                    <h2>Tech Blog</h2>
-                                    <p>Just an incredibly simple responsive  blog site<br />
-                                    let you dive into world of Tech </p>
-                                </header>
-                                <p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
-                            </div>
-                        </section>
-
+    <div className="wrapper">
+    <div className="page-header page-header-small">
+      <div className="page-header-image" data-parallax="true" >
+      </div>
+      <div className="content-center">
+        <div className="container">
+          <h1 className="title">This is our great company.</h1>
+          <div className="text-center">
+            <a href="#pablo" className="btn btn-primary btn-icon btn-round">
+              <i className="fab fa-facebook-square"></i>
+            </a>
+            <a href="#pablo" className="btn btn-primary btn-icon btn-round">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#pablo" className="btn btn-primary btn-icon btn-round">
+              <i className="fab fa-google-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="section section-about-us">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8 ml-auto mr-auto text-center">
+            <h2 className="title">Who we are?</h2>
+            <h5 className="description">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.</h5>
+          </div>
+        </div>
+        <div className="separator separator-primary"></div>
+        <div className="section-story-overview">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="image-container image-left"  />
                 
-                        <section id="two">
-                            <div className="container">
-                                <h3>Things I Can Do</h3>
-                                <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-                                <ul className="feature-icons">
-                                    <li className="icon solid fa-code">Write your blog</li>
-                                    <li className="icon solid fa-cubes">Find your favorite articles</li>
-                                    <li className="icon solid fa-book">Read latest Tech news</li>
-                                    <li className="icon solid fa-coffee">Have your free profile page</li>
-                                    <li className="icon solid fa-bolt">Lightning bolt</li>
-                                    <li className="icon solid fa-users">Shadow clone technique</li>
-                                </ul>
-                            </div>
-                        </section>
+                <p className="blockquote blockquote-primary">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly"
+                  
+                  <small>-NOAA</small>
+                </p>
+              </div>
+              
+              <div className="image-container"></div>
+            </div>
+            <div className="col-md-5">
+              
+              <div className="image-container image-right"></div>
+              <h3>So what does the new record for the lowest level of winter ice actually mean</h3>
+              <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+              </p>
+              <p>
+                For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.
+              </p>
+              <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="section section-team text-center">
+      <div className="container">
+        <h2 className="title">Reviews</h2>
+        <div className="team">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="team-player">
+                <img src="https://raw.githack.com/creativetimofficial/now-ui-kit/master/assets/img/avatar.jpg" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
+                <h4 className="title">Romina Hadid</h4>
+                <p className="category text-primary">Model</p>
+                <p className="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                  <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-twitter"></i></a>
+                <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-instagram"></i></a>
+                <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-facebook-square"></i></a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="team-player">
+                <img src="https://raw.githack.com/creativetimofficial/now-ui-kit/master/assets/img/ryan.jpg" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
+                <h4 className="title">Ryan Tompson</h4>
+                <p className="category text-primary">Designer</p>
+                <p className="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                  <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-twitter"></i></a>
+                <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="team-player">
+                <img src="https://raw.githack.com/creativetimofficial/now-ui-kit/master/assets/img/eva.jpg" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
+                <h4 className="title">Eva Jenner</h4>
+                <p className="category text-primary">Fashion</p>
+                <p className="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                  <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-google-plus"></i></a>
+                <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-youtube"></i></a>
+                <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer className="footer footer-default">
+      <div className="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.creative-tim.com">
+                Creative Tim
+              </a>
+            </li>
+            <li>
+              <a href="http://presentation.creative-tim.com">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="http://blog.creative-tim.com">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+         <div className="copyright" id="copyright">
 
-                   
-                        <section id="three">
-                            <div className="container">
-                                <h3>A Few Accomplishments</h3>
-                                <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-                                <div className="features">
-                                    <article>
-                                        <a href="#" className="image"><img src="images/pic01.jpg" alt="" /></a>
-                                        <div className="inner">
-                                            <h4>Possibly broke spacetime</h4>
-                                            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <a href="#" className="image"><img src="images/pic02.jpg" alt="" /></a>
-                                        <div className="inner">
-                                            <h4>Terraformed a small moon</h4>
-                                            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <a href="#" className="image"><img src="images/pic03.jpg" alt="" /></a>
-                                        <div className="inner">
-                                            <h4>Snapped dark matter in the wild</h4>
-                                            <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </section>
-
-                   
-                        <section id="four">
-                            <div className="container">
-                                <h3>Contact Me</h3>
-                                <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-                                <ul class="items">
-								<li>
-									<h3>Email</h3>
-									<a href="#">information@untitled.ext</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<a href="#">(000) 000-0000</a>
-								</li>
-								<li>
-									<h3>Address</h3>
-									<span>1234 Somewhere Road, San Francisco, CA 00000</span>
-								</li>
-								<li>
-									<h3>Elsewhere</h3>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
-									</ul>
-								</li>
-							</ul>
-                            </div>
-                        </section>
-                        </div>
-                </div>
-
-                
-
-          
-                <section id="footer">
-                    <div className="container">
-                        <ul className="copyright">
-                            <li>&copy; 2019. All rights reserved.</li><li>General Assembly</li>
-                        </ul>
-                    </div>
-                </section>
-
-       
+        </div>
+      </div>
+    </footer>
+  
 </>
-        
-
-
-
-
-    );
+    )
 };
 
 

@@ -5,6 +5,7 @@ import Register from '../components/auth/Register';
 import Login from '../components/auth/Login';
 import ProfileContainer from '../containers/ProfileContainer';
 import News from '../pages/News';
+import Home from '../pages/Home';
 
 
 const Routes = ({ setCurrentUser, history, currentUser }) => {
@@ -19,6 +20,7 @@ const Routes = ({ setCurrentUser, history, currentUser }) => {
     
     return (
     <Switch>
+        <Route path='/home' component={ Home } />
         <Route path='/news' component={ News } />
         <Route path='/register' component={ Register } />
         <Route path='/login' render={() => <Login setCurrentUser={setCurrentUser} history={history} /> } />

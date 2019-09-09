@@ -27,13 +27,26 @@ const create = (req, res) => {
             if (error) return sendErrorResponse(res, error);
             db.Post.user = foundUser
             createdPost.save();
-            db.Post.findById(createdPost._id).populate('user').exec((err, foundPost) => {
+            db.Post.findById(createdPost._id).populate('user').exec((error, foundPost) => {
                 if (error) return sendErrorResponse(res, error);
                 sendSuccessResponse(res, foundPost);
             });
         });
     });
 };
+
+// const create = (req, res) => {
+//     db.Post.create(req.body, (error, createdPost) => {
+//         if (error) return res.status(500).send(error);
+//         // createdPost.user = req.session.currentUser.id;
+//         createdPost.save((error, savedPost) => {
+//             if (error) return res.status(500).send(error);
+//             res.send(savedPost)
+//         });
+//     });
+// };
+
+
 
 const update = (req, res) => {
     db.Post.findByIdAndUpdate(req.params._id, req.body, {new: true}, (error, updatedPost) => {

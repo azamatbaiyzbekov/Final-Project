@@ -8,6 +8,7 @@ import News from '../pages/News';
 import Home from '../pages/Home';
 
 
+
 const Routes = ({ setCurrentUser, history, currentUser }) => {
     const PrivateRoute = ({ component: Component, ...rest }) => (
         <Route {...rest} render={(props) => {
@@ -20,12 +21,12 @@ const Routes = ({ setCurrentUser, history, currentUser }) => {
     
     return (
     <Switch>
-        <Route path='/home' component={ Home } />
         <Route path='/news' component={ News } />
         <Route path='/register' component={ Register } />
         <Route path='/login' render={() => <Login setCurrentUser={setCurrentUser} history={history} /> } />
         <PrivateRoute path='/about' component ={ AboutUs } />
         <PrivateRoute path='/profile' component ={ ProfileContainer } />
+        <PrivateRoute path='/home' component={ Home } />
     </Switch>
     
 

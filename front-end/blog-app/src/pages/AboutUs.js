@@ -32,7 +32,7 @@ const AboutUs = () => {
         <div className="row">
           <div className="col-md-8 ml-auto mr-auto text-center">
             <h2 className="title">Who we are?</h2>
-            <h5 className="description">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.</h5>
+            <h5 className="description">Established in 2019 the HackBlog is a platform, where you can write about existing and new technologies. Our goal is to let people share their ideas in the world of Tech and learn from each other.</h5>
           </div>
         </div>
         <div className="separator separator-primary"></div>
@@ -41,9 +41,9 @@ const AboutUs = () => {
             <div className="col-md-6">
               <div className="image-container image-left"  />
                 
-                <p className="blockquote blockquote-primary">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly"
+                <p className="blockquote blockquote-primary">"If you want to be a writer, you must do two things above all: Read a lot and write a lot"
                   
-                  <small>-NOAA</small>
+                  <small>-Steven King</small>
                 </p>
               </div>
               
@@ -52,13 +52,15 @@ const AboutUs = () => {
             <div className="col-md-5">
               
               <div className="image-container image-right"></div>
-              <h3>So what does the new record for the lowest level of winter ice actually mean</h3>
-              <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+              <h3>Rise or fall of blogging</h3>
+              <p>Blogs exploded in popularity fast. According to Drezner and Farrell, in 1999, there were an estimated 50 blogs dotted around the internet. By 2007, a blog tracker theorized there were around seventy million. Yet, a popular question today is whether blogs still have any relevance. A quick Google search will yield suggested results, “are blogs still relevant 2016,” “are blogs still relevant 2017,” and “is blogging dead.
               </p>
               <p>
-                For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.
+              There are 2 types of professional bloggers: people who make money through their own blog, and people who blog for a company
               </p>
-              <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+              <p>Great writing isn't enough to be a great blogger. You need to know how to get people to *read* your writing. Both types of professional blogger need a similar skillset—and that skillset isn’t necessarily the one you imagine when you hear “blogger.”
+              Of course, a professional blogger is going to need to be a strong writer. The blog writing is the foundation of a blog that makes money.
+              But strong writing on its own is almost never enough. Great writing can never create revenue or income unless people actually read it.
               </p>
             </div>
           </div>
@@ -75,8 +77,8 @@ const AboutUs = () => {
                 <img src="https://www.biography.com/.image/t_share/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
                 <h4 className="title">Elon Mask</h4>
                 <p className="category text-primary">SpaceX</p>
-                <p className="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                  <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                <p className="description">As the founder of SpaceX, I needed a place where i can share about our new teachnology with people. HackBlog is the place, where right now i am able to do it.
+                </p>
                 <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-twitter"></i></a>
                 <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-instagram"></i></a>
                 <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-facebook-square"></i></a>
@@ -87,8 +89,8 @@ const AboutUs = () => {
                 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
                 <h4 className="title">Brendon Eich</h4>
                 <p className="category text-primary">Javascript</p>
-                <p className="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                  <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                <p className="description">Thanks to HackBlog, we are able to share and teach people about most recent Javascript updates. 
+                </p>
                 <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-twitter"></i></a>
                 <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-linkedin"></i></a>
               </div>
@@ -98,8 +100,8 @@ const AboutUs = () => {
                 <img src="https://specials-images.forbesimg.com/imageserve/5ceaa9c5142c500008f3bcce/416x416.jpg?background=000000&cropX1=937&cropX2=3594&cropY1=11&cropY2=2667" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
                 <h4 className="title">Sheryl Sandberg</h4>
                 <p className="category text-primary">Facebook</p>
-                <p className="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                  <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                <p className="description">We recently launched Facebook dating. Thanks to HackBlog our team of writers were able to put some great articles and reach out to masses.
+                </p>
                 <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-google-plus"></i></a>
                 <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-youtube"></i></a>
                 <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-twitter"></i></a>

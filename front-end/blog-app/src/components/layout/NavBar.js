@@ -15,9 +15,6 @@ const NavBar = ({ logout, currentUser }) => {
         <NavLink className="nav-link" exact to="/about">About Us</NavLink>
       </li>
       <li className="nav-item">
-        <NavLink className="nav-link" exact to="/news">News</NavLink>
-      </li>
-      <li className="nav-item">
         <NavLink className="nav-link" to="/login">Login</NavLink>
       </li>
       <li className="nav-item">
@@ -35,6 +32,10 @@ const NavBar = ({ logout, currentUser }) => {
       <li className="nav-item">
         <NavLink className="nav-link" to="/home">Home</NavLink>
       </li>
+
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/news">News</NavLink>
+      </li>
      
       <li className="nav-item">
         <span className="nav-link" onClick={logout} style={{ cursor: 'pointer' }}>Logout</span>
@@ -43,7 +44,7 @@ const NavBar = ({ logout, currentUser }) => {
   );
 
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand" to="/">HackBlog</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">

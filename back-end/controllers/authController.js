@@ -25,6 +25,8 @@ const register = (req, res) => {
                 if (err) return res.status(500).json({ status: 500, errors: [{message: 'Something went wrong. Please try again'}] });
 
                 const newUser = {
+                    first_name: req.body.firstName,
+                    last_name: req.body.lastName,
                     username: req.body.username,
                     email: req.body.email,
                     password: hash,

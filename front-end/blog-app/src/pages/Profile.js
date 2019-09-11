@@ -2,7 +2,7 @@ import React from 'react';
 import './Profile.css'
 
 
-const Profile = ({ profile: { username, email, join_date, place_of_birth, occupation }}) => {
+const Profile = ({ profile: { username, email, join_date, first_name, last_name }}) => {
     return (
        
        <>
@@ -10,16 +10,16 @@ const Profile = ({ profile: { username, email, join_date, place_of_birth, occupa
         <div className="container main-secction">
         <div className="row">
             <div className="col-md-12 col-sm-12 col-xs-12 image-section">
-                <img src="https://png.pngtree.com/thumb_back/fw800/back_pic/00/08/57/41562ad4a92b16a.jpg" />
+                <img src="https://images.unsplash.com/photo-1473181488821-2d23949a045a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" />
             </div>
             <div className="row user-left-part">
                 <div className="col-md-3 col-sm-3 col-xs-12 user-profil-part pull-left">
                     <div className="row ">
                         <div className="col-md-12 col-md-12-sm-12 col-xs-12 user-image text-center">
-                            <img src="https://www.jamf.com/jamf-nation/img/default-avatars/generic-user-purple.png" className="rounded-circle" />
+                            <img src="https://previews.123rf.com/images/arbuzu/arbuzu1410/arbuzu141000187/32592464-letter-b-logo-icon-design-template-elements.jpg" className="rounded-circle" />
                         </div>
                         <div className="col-md-12 col-sm-12 col-xs-12 user-detail-section1 text-center">
-                            <button id="btn-contact"  data-toggle="modal" data-target="#contact" className="btn btn-success btn-block follow">Contact me</button> 
+                            <button id="btn-contact"  data-toggle="modal" data-target="#contact" className="btn btn-success btn-block follow">Contact me</button>
                                                     
                         </div>
                         
@@ -31,11 +31,11 @@ const Profile = ({ profile: { username, email, join_date, place_of_birth, occupa
                         <div className="col-md-12 profile-header">
                             <div className="row">
                                 <div className="col-md-8 col-sm-6 col-xs-6 profile-header-section1 pull-left">
-                                    <h1>Welcome to your profile page</h1>
-                                    <h5>Tech-Blog</h5>
+                                    <h1>Welcome:   {first_name} {last_name}</h1>
+                                    <h5>Hack-Blog</h5>
                                 </div>
                                 <div className="col-md-4 col-sm-6 col-xs-6 profile-header-section1 text-right pull-rigth">
-                                    <a href="/search" className="btn btn-primary btn-block">Whatever</a>
+                                    <a href="/home" className="btn btn-primary btn-block">Start Blogging</a>
                                 </div>
                             </div>
                         </div>
@@ -75,14 +75,7 @@ const Profile = ({ profile: { username, email, join_date, place_of_birth, occupa
                                                                     <p>{email}</p>
                                                                 </div>
                                                             </div>
-                                                            <div className="row">
-                                                                <div className="col-md-2">
-                                                                    <label>Occupation</label>
-                                                                </div>
-                                                                <div className="col-md-6">
-                                                                    <p>#</p>
-                                                                </div>
-                                                            </div>
+                                                            
                                                             <div className="row">
                                                                 <div className="col-md-2">
                                                                     <label>Date Joined</label>
@@ -98,14 +91,12 @@ const Profile = ({ profile: { username, email, join_date, place_of_birth, occupa
                                     <div className="row">
                                         <div className="col-md-12">
                                             <div className="row image-right-part">
-                                                <div className="col-md-6 pull-left image-right-detail">
-                                                    <h6>Logo</h6>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <a href="http://camaradecomerciozn.com/" >
                                             <div className="col-md-12 image-right">
-                                                <img src="http://pluspng.com/img-png/bootstrap-png-bootstrap-512.png" />
+                                                <img src="https://images.unsplash.com/photo-1487611459768-bd414656ea10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" />
                                             </div>
                                         </a>
                                         <div className="col-md-12 image-right-detail-section2">

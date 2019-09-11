@@ -6,17 +6,28 @@ import Posts from '../components/Posts/Posts';
 class PostsContainer extends Component {
     state = {
         posts: [],
-        // title: '',
-        // content: '',
-        
+        title: '',
+        content: '',
+        isEditing: false,
+        postToEdit: null,
     }
 
 
     componentDidMount() {
+        this.getAllPosts()
+    }
+
+    getAllPosts = () => {
         axios.get(`${API_URL}/posts`, { withCredentials: true })
         .then(res=> {
             console.log(res.data.data)
-            this.setState({posts: res.data.data})
+            this.setState({
+                posts: res.data.data,
+                title: '',
+                content: '',
+                isEditing: false,
+                postToEdit: null,
+            })
         })
         .catch(err=>console.log(err))
     }
@@ -64,17 +75,46 @@ class PostsContainer extends Component {
         .catch(err => console.log(err));
     }
 
-
-    editPost() {
-        
-        const post = {
-            title: this.state.title,
-            content: this.state.content,
-            
-        }
-        axios.put(`${API_URL}/posts/:_id`, post)
-        .then(res => console.log(res.data));
+    setPostEdit = (post) => {
+        console.log(post);
+        this.setState({
+            title: post.title,
+            content: post.content,
+            postToEdit: post._id,
+            isEditing: true,
+        })
     }
+
+    handleEditChange = (event) => {
+        console.log(event.target.name)
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+
+    editPost = (event) => {
+        event.preventDefault();
+        const { title, content } = this.state;
+        const date_posted = Date.now();
+        const updatedPost = {
+            title,
+            content,
+            date_posted
+        };
+        
+        console.log(updatedPost)
+        axios.put(`${API_URL}/posts/${this.state.postToEdit}`, updatedPost, { withCredentials: true}).then(
+            res => {
+                console.log(res);
+                this.getAllPosts();
+            }
+           
+        )
+        .catch(err => console.log(err));
+    }
+
+    
 
    
 
@@ -82,7 +122,7 @@ class PostsContainer extends Component {
         axios.delete(`${API_URL}/posts/${id}`, { withCredentials: true })
         .then(res => {
             this.setState({
-                posts: this.state.posts.filter((post) => post._id !== id )
+                posts: this.state.posts.filter((post) => post._id !== id ),
             })
             console.log('removed');
         })
@@ -94,7 +134,7 @@ class PostsContainer extends Component {
     render() {
         // const posts = this.state.posts.map(post => {
           
-        return  <Posts createPost={this.createPost} posts={this.state.posts} editPost={this.editPost} removePost={this.removePost} handleChange={this.handleChange} handleSubmit={this.handleSubmit}  />
+        return  <Posts editData={{content: this.state.content, title: this.state.title}} handleEditChange={this.handleEditChange} postToEdit={this.state.postToEdit} setPostEdit={this.setPostEdit} isEditing={this.state.isEditing} createPost={this.createPost} posts={this.state.posts} editPost={this.editPost} removePost={this.removePost} handleChange={this.handleChange} handleSubmit={this.handleSubmit}  />
         
     
     }

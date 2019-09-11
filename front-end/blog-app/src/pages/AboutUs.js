@@ -72,9 +72,9 @@ const AboutUs = () => {
           <div className="row">
             <div className="col-md-4">
               <div className="team-player">
-                <img src="https://raw.githack.com/creativetimofficial/now-ui-kit/master/assets/img/avatar.jpg" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
-                <h4 className="title">Romina Hadid</h4>
-                <p className="category text-primary">Model</p>
+                <img src="https://www.biography.com/.image/t_share/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
+                <h4 className="title">Elon Mask</h4>
+                <p className="category text-primary">SpaceX</p>
                 <p className="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                   <a href="#">links</a> for people to be able to follow them outside the site.</p>
                 <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-twitter"></i></a>
@@ -84,9 +84,9 @@ const AboutUs = () => {
             </div>
             <div className="col-md-4">
               <div className="team-player">
-                <img src="https://raw.githack.com/creativetimofficial/now-ui-kit/master/assets/img/ryan.jpg" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
-                <h4 className="title">Ryan Tompson</h4>
-                <p className="category text-primary">Designer</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
+                <h4 className="title">Brendon Eich</h4>
+                <p className="category text-primary">Javascript</p>
                 <p className="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                   <a href="#">links</a> for people to be able to follow them outside the site.</p>
                 <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-twitter"></i></a>
@@ -95,9 +95,9 @@ const AboutUs = () => {
             </div>
             <div className="col-md-4">
               <div className="team-player">
-                <img src="https://raw.githack.com/creativetimofficial/now-ui-kit/master/assets/img/eva.jpg" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
-                <h4 className="title">Eva Jenner</h4>
-                <p className="category text-primary">Fashion</p>
+                <img src="https://specials-images.forbesimg.com/imageserve/5ceaa9c5142c500008f3bcce/416x416.jpg?background=000000&cropX1=937&cropX2=3594&cropY1=11&cropY2=2667" alt="Thumbnail Image" className="rounded-circle img-fluid img-raised" />
+                <h4 className="title">Sheryl Sandberg</h4>
+                <p className="category text-primary">Facebook</p>
                 <p className="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
                   <a href="#">links</a> for people to be able to follow them outside the site.</p>
                 <a href="#pablo" className="btn btn-primary btn-icon btn-round"><i className="fab fa-google-plus"></i></a>
@@ -114,11 +114,7 @@ const AboutUs = () => {
       <div className="container">
         <nav>
           <ul>
-            <li>
-              <a href="https://www.creative-tim.com">
-                Creative Tim
-              </a>
-            </li>
+            
             <li>
               <a href="http://presentation.creative-tim.com">
                 About Us

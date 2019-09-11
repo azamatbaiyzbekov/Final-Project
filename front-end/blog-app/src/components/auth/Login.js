@@ -33,7 +33,7 @@ class Login extends Component {
         return (
         <div className="row">
         
-        <section id="login" className="col-md-6 offset-md-3">
+        <section id="login" className="col-md-4 offset-md-4 mt-5">
         { this.state.error }
           <h1>Login</h1>
           <form onSubmit={this.handleSubmit}>

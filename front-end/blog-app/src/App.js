@@ -17,7 +17,7 @@ class App extends Component {
 
   setCurrentUser = (userId) => {
     localStorage.setItem('uid', userId )
-    this.setState({ currentuser: userId });
+    this.setState({ currentUser: userId });
   }
 
   handleLogout = () => {
@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <>
       <NavBar logout={this.handleLogout} currentUser={this.state.currentUser} />
-      <div className="container">
+      <div className="">
         <Routes setCurrentUser={this.setCurrentUser} currentUser={this.state.currentUser}  />
       </div>
       </>

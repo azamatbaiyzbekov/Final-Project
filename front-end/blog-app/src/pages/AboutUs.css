@@ -1206,4 +1206,13 @@ img {
   font-style: normal;
         
 }
+ .image-left {
+     background-image: url("https://images.unsplash.com/photo-1548867450-0466088a4c4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80");
+ }
+ .page-header-image {
+     background-image: url("https://images.unsplash.com/photo-1518043647833-3c0c5da3360f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1513&q=80")
+ }
+ .image-right {
+    background-image: url("https://images.unsplash.com/photo-1519155031214-e8d583928bf2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80")
+ }
 

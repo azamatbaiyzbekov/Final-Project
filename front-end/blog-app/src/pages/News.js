@@ -10,13 +10,14 @@ class News extends Component {
     hackerNews: [],
   };
 
-  // LET COMPONENT MOUNT TO DOM
-  // THEN GET DATA FROM API AND SET STATE WITH RESPONSE DATA
+
+ 
+
   componentDidMount() {
-    axios.get(`https://hacker-news.firebaseio.com/v0/topstories.json`, { withCredentials: false })
+    axios.get(`https://newsapi.org/v2/everything?q=bitcoin&from=2019-08-11&sortBy=publishedAt&apiKey=1010fa308cf641519d26d46d577e64b2`)
     .then(res=> {
     console.log(res.data)
-      this.setState({hackerNews: res.data.slice(0, 20)})
+      this.setState({hackerNews: res.data})
       // console.log(this.state)
     })
     .catch(err=>console.log(err))
@@ -24,20 +25,14 @@ class News extends Component {
 
   render() {
 
-     const listOfNews = this.state.hackerNews.map(news => {
+    
        return (
          <div key="stories">
-           <h4 key="title">{news}</h4>
-           <p key="content">{news}</p>
+           <h4 key="title">{this.state.hackerNews}</h4>
          </div>
        )
-     })
-     return (
-       <div key="main">
-         <h1 key="news">News</h1>
-         { listOfNews }
-       </div>
-     );
+     
+     
     
   };
 };

@@ -1,6 +1,6 @@
 .body{
     margin-top: auto;
-      background-color: #f1f1f1;
+      background-color: black;
     }
     .border{
       border-bottom:1px solid #F1F1F1;
@@ -119,4 +119,18 @@
     .nav-link{
       font-size: 1.2em;    
     }
+
+.container {
+  padding-top: 20px;
+}    
+
+#btn-contact {
+  background-color: #f96332!important;
+}
+
+
+
+
+
+
     

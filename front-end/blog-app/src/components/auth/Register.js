@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { API_URL } from '../../constants';
+import './Register.css'
 
 
 class Register extends Component {
     state = {
+        firstName: '',
+        lastName: '',
         username: '',
         email: '',
         password: '',
@@ -31,6 +34,7 @@ class Register extends Component {
 
     render() {
         return (
+  
      <div className="row">
         {this.state.errors && this.state.errors.map((e, i) => (
           <div className="alert alert-danger alert-dismissible fade show" style={{width: '100%'}} role="alert" key={i}>
@@ -40,9 +44,21 @@ class Register extends Component {
             </button>
           </div>
         ))}
-        <section id="register" className="col-md-6 offset-md-3">
+        <section id="register" className="col-md-4 offset-md-4 mt-5">
           <h2 className="mb-4">Register</h2>
           <form onSubmit={this.handleSubmit}>
+
+          <div className="form-group">
+              <label htmlFor="username">First Name</label>
+              <input type="firstName" id="firstName" name="firstName" value={this.state.firstName} onChange={this.handleChange} className="form-control form-control-lg" />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="username">Last Name</label>
+              <input type="lastName" id="lastName" name="lastName" value={this.state.lastName} onChange={this.handleChange} className="form-control form-control-lg" />
+            </div>
+
+
             <div className="form-group">
               <label htmlFor="username">Username</label>
               <input type="username" id="username" name="username" value={this.state.username} onChange={this.handleChange} className="form-control form-control-lg" />
@@ -63,6 +79,8 @@ class Register extends Component {
           </form>
         </section>
       </div>
+    
+    
         );
     };
 

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import CreatePostForm from '../Forms/CreatePostForm';
+import CreateEditForm from '../Forms/CreateEditForm';
 
-class Modal extends Component {
+class EditModal extends Component {
     render () {
         return (
            
@@ -9,13 +9,13 @@ class Modal extends Component {
 <div className="modal-dialog" role="document">
   <div className="modal-content">
     <div className="modal-header">
-      <h5 className="modal-title" id="exampleModalLabel">Add Blog</h5>
+      <h5 className="modal-title" id="exampleModalLabel">Edit</h5>
       <button type="button" className="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
     <div className="modal-body">
-    <CreatePostForm  createPost={this.props.createPost}/>
+     <CreateEditForm editPost={this.props.editPost}/> 
 
     </div>
     
@@ -26,4 +26,4 @@ class Modal extends Component {
     }
 }
 
-export default Modal;
+export default EditModal;
